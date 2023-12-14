@@ -1,0 +1,42 @@
+.common {
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  :global {
+    .header {
+      height: 48px;
+      background: #083645;
+    }
+    .body {
+      flex: 1;
+    }
+
+    .footer {
+      height: 58px;
+      background: #083645;
+    }
+  }
+}
+
+.blank {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  :global {
+    .blankBody {
+      flex: 1;
+      overflow: scroll;
+    }
+    .dialogBtn {
+      display: flex;
+      justify-content: space-between;
+
+      .cancelBtn {
+        background: #d6e7ff;
+        border: solid 1px #d6e7ff;
+        margin-right: 12px;
+      }
+    }
+  }
+}

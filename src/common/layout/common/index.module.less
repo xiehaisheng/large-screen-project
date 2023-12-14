@@ -1,0 +1,42 @@
+@import "@/common/utils/variable.less";
+
+.headerWrapper {
+  height: 100%;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  animation: fade 1.2s;
+
+  :global {
+    .title {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.footerWrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: fade 1.2s;
+
+  :global {
+    .footer-items {
+      padding: 8px 20px;
+      border: 1px solid #03b69e;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .active{
+      background: rgba(3 182 158 / 40%);
+    }
+  }
+}

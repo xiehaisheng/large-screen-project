@@ -1,0 +1,58 @@
+@primary: #818181;
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes leftSlide {
+  0% {
+    transform: translateX(-100%);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rightSlide {
+  0% {
+    transform: translateX(100%);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bottomSlide {
+  0% {
+    transform: translateY(100%);
+  }
+  80% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.oneLineEllipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
